@@ -13,7 +13,7 @@ const convertValues = async () => {
 
     const dollar = data.USDBRL.high
     const euro = data.EURBRL.high
-    const bitcoin = data.BTCBRL.high * 0.0000001    //26
+    const bitcoin = data.BTCBRL.high * 1000           //0.000000126
 
       // Abaixo temos uma biblioteca que formata o numero do valor(dinheiro) para a moeda escolhida!! 
         realValueText.innerHTML = new Intl.NumberFormat('pt-BR', {
