@@ -1,9 +1,7 @@
 const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
 
-// const dollar = 5.2
-// const euro = 5.2
-// const bitcoin = 0.0000090
+
 
 const convertValues = async () => {
     const inputReais = document.getElementById('input-real').value
@@ -15,7 +13,7 @@ const convertValues = async () => {
 
     const dollar = data.USDBRL.high
     const euro = data.EURBRL.high
-    const bitcoin = data.BTCBRL.high * 0.000000126
+    const bitcoin = data.BTCBRL.high * 0.0000001    //26
 
       // Abaixo temos uma biblioteca que formata o numero do valor(dinheiro) para a moeda escolhida!! 
         realValueText.innerHTML = new Intl.NumberFormat('pt-BR', {
